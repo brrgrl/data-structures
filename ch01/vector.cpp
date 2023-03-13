@@ -17,5 +17,13 @@ int main() {
 
     cout << "\nThe total sum: " << sum << endl;
 
+    // using a refernce to increase squares by 1
+    for (auto & x: squares)
+        ++x;
+
+    for (int i = 0; i < squares.size(); ++i)
+        cout << i << " " << squares[i] << endl;
+
+
     return 0;
 }
